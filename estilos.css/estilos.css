@@ -1,0 +1,941 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Quantico', sans-serif;
+}
+
+
+body {
+    background-color: #f0e9d2;
+    width: 100%;
+    padding-top: 70px;
+}
+
+.contenedor-principal {
+    width: 100%;
+}
+
+
+/*navegacion*/
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+}
+
+nav {
+    background-color: #181D31;
+    height: 70px;
+}
+
+nav>ul {
+    padding-left: 0rem;
+}
+
+
+.logo {
+    color: white;
+    text-align: center;
+}
+
+.menu_principal {
+    display: flex;
+    justify-content: center;
+    position: absulote;
+    font-size: 0.8rem;
+}
+
+.menu_principal li a {
+    display: block;
+    margin: 0px 10px;
+
+}
+
+.menu_principal li a:hover {
+    font-size: 0.9rem;
+    transition: all 500ms;
+    color: #678983;
+}
+
+.menu_secundario li a {
+    color: black;
+
+}
+
+.menu_secundario {
+    position: relative;
+    padding: 10px 0px;
+    background-color: #E6DDC4;
+    width: 100%;
+    display: none; 
+    text-align: center;
+}
+
+ .menu_principal li:hover .menu_secundario {
+    display: block;
+} 
+
+/*Imagen de presentacion*/
+
+.contenedor-img-presentacion {
+    background-image: url(../img/porsche-911.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.contenedor-texto-presentacion {
+    text-align: center;
+    margin-right: 210px;
+    font-size: 0.8rem;
+
+}
+
+.contenedor-texto-presentacion>h3 {
+    color: tomato;
+    text-align: center;
+}
+
+.contenedor-texto-presentacion>p {
+    color: white;
+}
+
+#botonPresentacion1 {
+    background-color: #181d31;
+    border: 1px solid #181D31;
+    color: #E6DDC4;
+    border-radius: 50px;
+    font-size: 0.8rem;
+}
+
+#botonPresentacion1:hover {
+    transition: all 500ms;
+    background-color: #678983;
+    border: 1px solid #678983;
+}
+
+
+/*pagina principal cartas*/
+.cartas-servicios {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.carta-1 {
+    background-color: #678983;
+    height: auto;
+    padding: 15px 0;
+}
+
+.carta-2 {
+    background-color: #181D31;
+    height: auto;
+    padding: 15px 0;
+}
+
+.carta-3 {
+    background-color: #678983;
+    height: auto;
+    padding: 15px 0;
+}
+
+.carta-1:hover {
+    background-color: #678983f5;
+}
+
+.carta-2:hover {
+    background-color: #181d31f6;
+}
+
+.carta-3:hover {
+    background-color: #678983f5;
+}
+
+
+
+#boton-para-carta {
+    background-color: #181d3100;
+    border: 1px solid #F0E9D2;
+    border-radius: 50px;
+    font-size: 0.8rem;
+}
+
+/* seccion principal nosotros */
+
+.seccion-principal-nosotros {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.transicion-img-nosotros {
+    -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-hor-left {
+    0% {
+        -webkit-transform: scaleX(0.4);
+        transform: scaleX(0.4);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+    }
+}
+
+@keyframes scale-up-hor-left {
+    0% {
+        -webkit-transform: scaleX(0.4);
+        transform: scaleX(0.4);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+    }
+}
+
+
+
+
+.seccion-texto-nosotros>h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: #678983;
+}
+
+.seccion-texto-nosotros>p {
+    text-align: justify;
+}
+
+/* seccion pagina principal repro vehiculo */
+
+.simulacion-reprovehiculos {
+    margin: 15px;
+}
+
+.simulacion-reprovehiculos h4 {
+    color: #678983;
+    text-align: center;
+}
+
+.form-sistema-reprovehiculos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-sistema-reprovehiculos select {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.btn-simular {
+    color: #F0E9D2;
+    background-color: #181D31;
+    border: 1px solid #181D31;
+    border-radius: 3px;
+    padding: 0px 40px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px black;
+    width: 50%;
+}
+
+
+
+.btn-simular:hover {
+    transition: all 600ms;
+    background-color: #F0E9D2;
+    color: #181D31;
+}
+
+
+/*seccion iconos estadisticas*/
+
+.tamaño-icono {
+    height: 50px;
+    width: 50px;
+}
+
+.iconos-estadisticas {
+    margin: 70px 15px;
+    text-align: center;
+}
+
+.iconos-estadisticas h2 {
+    color: #678983
+}
+
+
+
+/*seccion testimonios */
+
+
+.titulo-testimonios>h5 {
+    text-align: center;
+    color: #678983;
+}
+
+.titulo-testimonios>h4 {
+    text-align: center;
+    color: #181D31;
+}
+
+.seccion-titulo-testimonios {
+    margin: 20px;
+}
+
+.tamaño-icono-testimonios {
+    width: 80px;
+    height: 80px;
+}
+
+.testimonio-1 {
+    display: flex;
+    flex-direction: row;
+    background-color: #e6ddc493;
+    padding: 10px;
+
+}
+
+.texto-testimonio-1 {
+    margin: 0px 10px;
+    text-align: justify;
+}
+
+.texto-testimonio-1>h5 {
+    color: #678983;
+}
+
+.testimonio-2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #e6ddc493;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.texto-testimonio-2 {
+    margin: 0px 10px;
+
+}
+
+.texto-testimonio-2>h5 {
+    color: #678983;
+}
+
+.testimonio-3 {
+    display: flex;
+    flex-direction: row;
+    background-color: #e6ddc493;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.texto-testimonio-3 {
+    margin: 0px 10px;
+
+}
+
+.texto-testimonio-3>h5 {
+    color: #678983;
+}
+
+/* seccion pie de pagina-footer */
+
+footer {
+    text-align: center;
+    background-color: #181D31;
+    padding: 15px;
+}
+
+footer p {
+    color: white;
+    margin-bottom: 0rem;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer h3 {
+    color: #678983;
+}
+
+.llamanos-contacto,
+.horarios-contacto,
+.ubicacion-contacto,
+.contactanos-contacto,
+.pie-pagina {
+    margin-top: 15px;
+}
+
+.boton-contacto {
+    background-color: #E6DDC4;
+    padding: 5px;
+    border: 1px solid #E6DDC4;
+    color: #181D31;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+
+}
+
+.boton-contacto:hover {
+    background-color: #678983;
+    border: 1px solid #678983;
+    transition: all 500ms;
+    color: #181D31;
+}
+
+/* seccion de la pagina: nosotros */
+
+.contenedor-img-texto-seccion-nosotros {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 15px;
+
+}
+
+.estilo-img-seccion-nosotros {
+    border-radius: 3px;
+}
+
+.contenedor-texto-seccion-nosotros {
+    margin-top: 10px;
+}
+
+.contenedor-texto-seccion-nosotros h3 {
+    color: #678983;
+    text-align: center;
+}
+
+.contenedor-texto-seccion-nosotros h2 {
+    text-align: center;
+    color: #181D31;
+}
+
+.contenedor-texto-seccion-nosotros p {
+    text-align: justify;
+}
+
+.titulo-experiencia-nosotros {
+    color: tomato;
+    text-align: center;
+    margin: 50px 15px;
+}
+
+.preguntas-frecuentes-nosotros {
+    margin: 20px 15px;
+}
+
+.preguntas-frecuentes-nosotros h3 {
+    text-align: center;
+    color: #678983;
+
+}
+
+.preguntas-frecuentes-nosotros h2 {
+    text-align: center;
+    color: #181D31;
+
+}
+
+.preguntas-frecuentes {
+    margin-top: 20px;
+}
+
+.preguntas-frecuentes h4 {
+    color: #181D31;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.preguntas-frecuentes p {
+    text-align: justify;
+    margin: 0 15px;
+}
+
+
+/*seccion de la pagina reprogramacion */
+
+.contenedor-fondo-reprosimulador {
+    background-color: #678983;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.contenedor-fondo-reprosimulador h4 {
+    color: white;
+}
+
+
+
+
+.contenedor-icono-texto-recomendacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.parrafo-subtitulo-recomendacion {
+    margin: 5px 15px 0 15px;
+    text-align: center;
+}
+
+#parrafoDeRecomendacion {
+    margin: 40px 15px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.parrafoDeRecomendacion1 {
+    margin: 15px;
+}
+
+.parrafoDeRecomendacion2 {
+    margin: 15px;
+}
+
+
+.titulo-repuestos {
+    text-align: center;
+    color: white;
+    background-color: #181D31;
+    padding: 10px 0;
+}
+
+.contenido-repuestos {
+    margin: 15px 15px;
+    text-align: center;
+    color: #678983;
+}
+
+.tamaño-icono-repuestos {
+    width: 50px;
+    height: 50px;
+}
+
+/*seccion stage */
+
+.seccion-stage {
+    margin: 50px 15px;
+}
+
+.titulo-stage {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tamaño-imagen-stage {
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 5px 5px 20px;
+}
+
+.stage-txt h2 {
+    text-align: center;
+    color: #678983;
+    margin-top: 30px;
+}
+
+.stage-txt p {
+    text-align: justify;
+
+}
+
+.stage2 {
+    margin: 30px 0;
+}
+
+
+/*seccion contactanos */
+#titulo-contactanos {
+    color: #181D31;
+    text-align: center;
+
+}
+
+.seccion-form-contactanos {
+    padding: 15px;
+}
+
+.fondo-color-form-contactanos {
+    background-color: #678983;
+    margin-bottom: 20px;
+
+}
+
+
+.form-contacto {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.estilo-textarea {
+    outline: none;
+    border: 1px solid #678983;
+}
+
+.estilo-textarea--mensaje {
+    width: 300px;
+    height: 100px;
+}
+
+
+.btn-contactanos {
+    margin-top: 20px;
+    color: #F0E9D2;
+    background-color: #181D31;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #181D31;
+    box-shadow: 5px 5px 10px black;
+}
+
+.btn-contactanos--contacto {
+    width: 50%;
+}
+
+
+.btn-contactanos:hover {
+    background-color: #F0E9D2;
+    color: #181D31;
+    transition: all 500ms;
+}
+
+
+/* seccion de la página contacto 
+se encuentra en el anidacion*/
+
+
+/*seccion de la pagina repuesto */
+
+.seccion-repuestos {
+    margin: 40px 0;
+}
+
+.titulo-icono-repuestos h2 {
+    font-size: calc(1.325rem + .0vw);
+    color: #678983;
+}
+
+.titulo-icono-repuestos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+}
+
+/*seccion turbo */
+#Turbo,
+#Llantas,
+#Nitro,
+#Escapes {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+.tamaño-imagen-repuestos {
+    width: 80%;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px black;
+}
+
+
+.contenido-turbo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 15px;
+
+}
+
+.contenido-turbo h5 {
+    color: #678983;
+    margin-top: 20px;
+
+}
+
+
+.turbo-electrico,
+.turbo-sencillo,
+.turbo-twin {
+    margin-top: 20px;
+}
+
+
+/* seccion de llantas */
+
+.contenido-llantas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 15px;
+
+}
+
+.contenido-llantas h5 {
+    color: #678983;
+    margin-top: 20px;
+}
+
+/* seccion nitro */
+
+.contenido-nitro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 15px;
+
+}
+
+.contenido-nitro h5 {
+    color: #678983;
+    margin-top: 20px;
+}
+
+/*seccion escapes */
+
+
+.contenido-escapes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 15px;
+}
+
+.contenido-escapes h5 {
+    color: #678983;
+    margin-top: 20px;
+}
+
+/*media queries */
+
+/*tablet */
+
+@media only screen and (min-width:600px) {
+    nav {
+        height: 75px;
+    }
+
+    body {
+        padding-top: 75px;
+    } 
+
+    .menu_principal {
+        font-size: 1rem;
+    }
+
+
+    .contenedor-texto-presentacion {
+        font-size: 0.9rem;
+        margin-right: 340px;
+    }
+
+    #botonPresentacion1 {
+        font-size: 0.8rem;
+    }
+
+    #boton-para-carta {
+        font-size: 0.8rem;
+    }
+
+    .boton-contacto {
+        font-size: 1rem;
+    }
+}
+
+/*dekstop */
+@media only screen and (min-width:768px) {
+   
+ 
+    nav {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         height: 50px;
+    }
+   
+    .menu_principal {
+        margin-top:20px;
+    }
+
+   
+
+    body {
+        padding-top: 50px;
+    }
+   
+    .contenedor-img-presentacion {
+        height: 300px;
+    }
+
+    .contenedor-texto-presentacion {
+        margin-right: 555px;
+    }
+    
+    
+    .cartas-servicios {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .carta-1,
+    .carta-2,
+    .carta-3 {
+        padding: 15px;
+        width: 33.333%;
+        }
+
+    .form-sistema-reprovehiculos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form-sistema-reprovehiculos select {
+        margin: 0px 5px;
+    }
+
+    .btn-simular {
+        margin-top: 0;
+    }
+
+    .seccion-testimonios {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .testimonio-1 {
+        margin-right: 10px;
+        width: 35%;
+    }
+
+    .testimonio-2 {
+        margin-right: 10px;
+        width: 35%;
+        margin-top: 0;
+    }
+
+    .testimonio-3 {
+        width: 35%;
+        margin-top: 0;
+    }
+
+    /*seccion repuestos */
+    .tamaño-icono-repuestos {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .contenido-repuestos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .stage1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stage2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stage3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tamaño-imagen-stage {
+        width: 60%;
+    }
+
+    .tamaño-imagen-repuestos {
+        width: 60%;
+    }
+
+
+    /*seccion de contacto pagina */
+    .contacto-pag {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        
+    }
+   
+    .contacto-pag .ubicacion-pag {
+      margin-bottom: 0px;
+    }
+   
+    .contacto-pag .escribenos-pag {
+        margin-bottom: 0px;
+        padding: 2px;
+        
+    }
+    .contacto-pag .llamanos-pag {
+        margin: 0;
+    }
+   
+    .btn-contactanos--contacto {
+        width: 20%;
+    }
+}

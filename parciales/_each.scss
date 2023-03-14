@@ -1,0 +1,30 @@
+@import "./variables";
+
+
+@each $vehiculo in Rs5, M3, Gti, Tablero {
+    .imgPortadaVehiculo#{$vehiculo} {
+        width: 100%;
+        background-image: url(../img/portada#{$vehiculo}.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+    }
+    
+    }
+        
+@each $vehiculo in Rs5, M3, Gti, Tablero {
+    .titulo-portada-#{$vehiculo} {
+        color:$color-primario ;
+        margin-left:15px;
+    }
+}
+
+@each $repuesto in escapes, llantas, nitro, turbo {
+    .espaciado-iconos-#{$repuesto} {
+        margin-top: 30px;
+    }
+}

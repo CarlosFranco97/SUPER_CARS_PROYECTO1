@@ -1,0 +1,165 @@
+/*VARIABLES*/
+/*VARIABLES*/
+/*seccion de la pagina contacto */
+.contacto-pag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+  text-align: center;
+}
+.contacto-pag h2 {
+  color: white;
+}
+.contacto-pag .llamanos-pag {
+  margin: 20px;
+  padding: 20px;
+  width: 80%;
+  border-radius: 3px;
+  box-shadow: 5px 5px 10px #678983;
+  background-color: #678983;
+}
+.contacto-pag .ubicacion-pag {
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 80%;
+  border-radius: 3px;
+  box-shadow: 5px 5px 10px #E6DDC4;
+  background-color: #E6DDC4;
+}
+.contacto-pag .escribenos-pag {
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 80%;
+  border-radius: 3px;
+  box-shadow: 5px 5px 10px #678983;
+  background-color: #678983;
+}
+
+.contacto-pag .llamanos-pag:hover {
+  background-color: rgba(103, 137, 131, 0.8039215686);
+}
+.contacto-pag .ubicacion-pag:hover {
+  background-color: rgba(230, 221, 196, 0.768627451);
+}
+.contacto-pag .escribenos-pag:hover {
+  background-color: rgba(103, 137, 131, 0.8039215686);
+}
+
+/*seccion de la pagina repuestos */
+.fondo-form-distribuidor {
+  background-color: #E6DDC4;
+  padding: 15px;
+  margin-top: 20px;
+}
+.fondo-form-distribuidor .seccion-form-distribuidor {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.fondo-form-distribuidor .seccion-form-distribuidor h2 {
+  color: #678983;
+}
+.fondo-form-distribuidor .seccion-form-distribuidor h4 {
+  color: #181D31;
+}
+.fondo-form-distribuidor .seccion-form-distribuidor .form-distribuidor {
+  display: flex;
+  flex-direction: column;
+}
+.fondo-form-distribuidor .seccion-form-distribuidor .form-distribuidor label {
+  margin: 10px 0;
+}
+
+/*VARIABLES*/
+.imgPortadaVehiculoRs5 {
+  width: 100%;
+  background-image: url(../img/portadaRs5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.imgPortadaVehiculoM3 {
+  width: 100%;
+  background-image: url(../img/portadaM3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.imgPortadaVehiculoGti {
+  width: 100%;
+  background-image: url(../img/portadaGti.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.imgPortadaVehiculoTablero {
+  width: 100%;
+  background-image: url(../img/portadaTablero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.titulo-portada-Rs5 {
+  color: #181D31;
+  margin-left: 15px;
+}
+
+.titulo-portada-M3 {
+  color: #181D31;
+  margin-left: 15px;
+}
+
+.titulo-portada-Gti {
+  color: #181D31;
+  margin-left: 15px;
+}
+
+.titulo-portada-Tablero {
+  color: #181D31;
+  margin-left: 15px;
+}
+
+.espaciado-iconos-escapes {
+  margin-top: 30px;
+}
+
+.espaciado-iconos-llantas {
+  margin-top: 30px;
+}
+
+.espaciado-iconos-nitro {
+  margin-top: 30px;
+}
+
+.espaciado-iconos-turbo {
+  margin-top: 30px;
+}
+
+/*VARIABLES*/
+/*.btn-simular-1 {
+    @extend .btn-simular;
+    background-color: red;
+} *//*# sourceMappingURL=main.css.map */

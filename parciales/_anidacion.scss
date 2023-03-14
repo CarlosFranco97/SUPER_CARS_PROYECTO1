@@ -1,0 +1,94 @@
+@import "./variables";
+
+
+/*seccion de la pagina contacto */
+
+.contacto-pag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+    text-align: center;
+   
+    h2{
+        color: $color-letra2;
+    } 
+
+    .llamanos-pag {
+        margin: 20px;
+        padding: 20px;
+        width: 80%;
+        border-radius: 3px;
+        box-shadow: 5px 5px 10px $color-secundario;  
+        background-color:$color-secundario;
+    }
+
+    .ubicacion-pag {
+        margin-bottom: 20px;
+        padding:20px;
+        width: 80%;
+        border-radius: 3px;
+        box-shadow: 5px 5px 10px $color-letra;  
+        background-color:$color-letra;
+    }
+
+    .escribenos-pag {
+        margin-bottom: 20px;
+        padding:20px;
+        width: 80%;
+        border-radius: 3px;
+        box-shadow: 5px 5px 10px $color-secundario;  
+        background-color:$color-secundario;
+    }
+}
+
+.contacto-pag {
+    .llamanos-pag:hover {
+        background-color: #678983cd;
+    }
+    
+    .ubicacion-pag:hover {
+        background-color: #e6ddc4c4;
+    }
+
+    .escribenos-pag:hover {
+        background-color: #678983cd;
+    }
+}
+
+/*seccion de la pagina repuestos */
+
+.fondo-form-distribuidor {
+    background-color: $color-letra;
+    padding: 15px;
+    margin-top: 20px;
+
+    .seccion-form-distribuidor {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+        color: $color-secundario;
+    }
+
+    h4 {
+        color: $color-primario;
+    }
+
+    .form-distribuidor {
+        display: flex;
+        flex-direction: column;
+        
+        label {
+            margin: 10px 0;
+        }
+    }
+
+ }
+    
+}
+
+
